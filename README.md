@@ -20,7 +20,8 @@ Say we wanted to implement logging for the filter function of the object-api.
 You simply require the logger and then name the child logger accordingly.
 
 ```javascript
-logger = logger.child({component: 'filter'});
+var loglet = require('loglet');
+loglet = loglet.child({component: 'filter'});
 ```
 
 ### Logging Usage
@@ -29,7 +30,7 @@ Logging is as straightforward as
 ```javascript
 function (error, response) {
   if (error) {
-    logger.error(error);
+    loglet.error(error);
   }
 }
 ```
