@@ -4,15 +4,21 @@
 This repo defines the logger instance to be used across the various cloudlet-platform repos.
 
 ### Log Levels
-The current configuration specifies three logging levels
+Bunyan supports multiple logging levels. We have it configured so that anything logged at level `info` and above is written to
+`'/opt/openi/cloudlet_platform/logs/cloudletPlatform.log'`
 
-* info
-  * logs to `stdout`, preferable to excessive uses of `console.log()`
-* error
-  * logs to `/opt/openi/cloudlet_platform/logs/cloudletPlatformError.log`
+* trace
+  * level 10
 * debug
-  * logs to `/opt/openi/cloudlet_platform/logs/cloudletPlatformDebug.log`
-
+  * level 20
+* info
+  * level 30
+* warn
+  * level 40
+* error
+  * level 50
+* fatal
+  * level 60
 
 ### Associating the logger with particular components of the platform
 Bunyan has a concept of a child logger to specialize a logger for a sub-component of your application.
