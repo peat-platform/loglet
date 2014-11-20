@@ -1,4 +1,4 @@
-## Logger Experiment for the Cloudlet Platform
+## Logging for the Cloudlet Platform
 
 [Bunyan](https://github.com/trentm/node-bunyan) is a simple and fast JSON logging library for node.js services.
 This repo defines the logger instance to be used across the various cloudlet-platform repos.
