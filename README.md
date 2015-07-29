@@ -5,7 +5,7 @@ This repo defines the logger instance to be used across the various cloudlet-pla
 
 ### Log Levels
 Bunyan supports multiple logging levels. We have it configured so that anything logged at level `info` and above is written to
-`'/opt/openi/cloudlet_platform/logs/cloudletPlatform.log'`
+`'/opt/peat/cloudlet_platform/logs/cloudletPlatform.log'`
 
 
 Type | Level
